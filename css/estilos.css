@@ -1,0 +1,39 @@
+body {
+	height: 800px;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+.contenido {
+	position: fixed;
+	left: 0;
+	top: 400px;
+	z-index: 800;
+}
+.social li a {
+	color: white;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 22px;
+	width: 45px;
+	height: 45px;
+	padding: 12px;
+}
+.social li a:hover {
+	background-color: black;
+	width: 70px;
+}
+.facebook {
+	background-color: #4d68a1;
+}
+.twitter {
+	background-color: #1FB1EE;
+}
+.youtube {
+	background-color: #EE2A1F;
+}
+.instagram{
+	background-color:#dc336f;
+}

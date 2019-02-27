@@ -1,0 +1,437 @@
+header{
+    background: white;
+}
+.fill{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.carousel {
+    height: 80%;
+}
+.carousel-inner .item{
+    width: 100%;
+    height: 100%;
+    margin:auto;
+}
+.carousel-control{
+    opacity: 0;
+}
+.carousel-inner {
+    height: 100%;
+    width: 80%;
+    margin: auto !important;
+    overflow: hidden;
+}
+.carousel-control.right {
+    /*background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(45, 45, 45, 0.18) 100%) !important;*/
+    background-image: unset;
+    
+}
+.carousel-control.left{
+    /*background-image: linear-gradient(to right,rgba(45, 45, 45, 0.18) 0,rgba(0,0,0,.0001) 100%) !important;*/
+    background-image: unset;
+}
+
+
+
+.heda-contenido{
+	text-align: center;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    height: 30%;
+    width: 90%;
+    margin: -15% 0 0 -25%;
+}
+
+.tiulo-general{
+  display: none;
+  font-size: 5rem;
+  animation-duration: 1.5s;
+  animation-name: slideinnn;
+  transition: 1s ease all;
+  background: rgba(0,0,0,.5);
+  border-radius: 5px;
+}
+
+@keyframes slideinnn {
+  0% {
+    transform: rotate(20deg);
+  }25%{
+  	transform: rotate(0deg);
+  }50%{
+  	transform: rotate(-20deg);
+  }100%{
+	transform: rotate(0deg);
+  }
+}
+
+.nombre-ano{
+  display: none;
+
+  font-size: 5rem;
+  animation-duration: 1.5s;
+  animation-name: slideinn;
+  transition: 1s ease all;
+
+  background: rgba(0,0,0,.5);
+  border-radius: 5px;
+}
+
+@keyframes slideinn {
+  from {
+    margin-right: 100%;
+  }
+
+  to {
+    margin-right: 0%;
+  }
+}
+
+
+.nombre-ano{
+	font-size: 2.2rem;
+}
+/*El nav*/
+.navbar.navbar-inverse{
+	position: fixed;
+	width: 100%;
+	box-shadow: 0px 3px 0px #6E98BA;
+	color: #003366;
+    top: 0;
+}
+
+.navbar-inverse {
+    background-color: #003366;
+}
+
+.menu > ul > li:hover{
+	background: #A6C4E0;
+	transition: .2s ease all;
+	
+}
+.menu > ul > li {
+    background: #003366;
+}
+.menu > ul > li a{
+    text-transform: uppercase !important;
+}
+.menu-container{
+	background: #003366;
+}
+.menu > ul > li> a:hover{
+	color: #003366;	
+}
+.menu > ul > li > ul{
+	background: rgba(0,51,102,.7);
+}
+.menu > ul > li ul li ul> li:hover{
+	background: #A6C4E0;
+	padding: 5px;
+	border-radius: 5px;	
+	transition: .5s ease all;
+}
+.menu > ul > li ul li ul> li{
+	padding: 4px;	
+}
+.menu > ul > li ul li ul> li> a:hover{
+	color: #003366;	
+}
+#myCarousel{
+    box-shadow: none !important;
+}
+.contenedor-principal{
+        padding-top: 20px;
+}
+@media (min-width: 1000px) {
+    /*menu*/
+  .menu > ul > li:last-child{
+      position: absolute;
+      right: 0px;
+      background: transparent;
+  }
+  .menu-container {
+    width: 95%;
+  }
+   /* Contenedor General*/
+    .contenedor-principal{
+        padding-top: 30px;
+        width: 87%;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        /*background-image: url(../img/fondo1.png),url(../img/fondo2.png);*/
+        background-repeat: no-repeat,no-repeat;
+        background-attachment: scroll,fixed;
+        background-position: top, top center;
+        background-color: #FFFFFF;
+    }
+    /*Noticias*/
+    .titulos{
+        z-index: 1;
+    }
+    .titulos:after{
+        z-index: -1;
+    }
+     .navbar.navbar-inverse{
+        width: inherit;
+    }
+    #myCarousel{
+        background: #003366;
+    }
+    .btn img {
+        width: 70px  !important;
+    }
+    .Center-personalizado{
+        width: 970px;
+        margin: auto;
+    }
+    .carousel-inner{
+        width: 87%;
+    }
+    .noticias-titulo h5{
+       /* background: red;
+        border: 4px solid blue;*/
+    }
+    /*Titulos Ciudad de la amistad*/
+    .carousel-caption{
+        right: 2%;
+        left: 2%;
+        top: 40%;
+    }
+    #wrapper hx{
+        font-size: 42px  !important;
+        text-transform: uppercase;
+    }
+    
+}
+
+
+   
+    body{
+        background: #003366;
+    }
+}
+
+/*Presentación*/
+.presentation.container{
+	width: 100%;
+    background: rgba(197,215,237,.7);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    transition: 1s ease all;
+    display: none;
+}
+
+/*Datos Municipales*/
+.col-md-3.col-sm-6{
+	margin-top: 1.3rem;
+}
+.col-md-3.col-sm-6:hover{
+	background: #6E98BA;
+	border-radius: 5px;
+	transition: .6s ease all;
+    box-shadow: 4px 4px 8px black;
+    transform: scale(1.1);
+}
+
+.col-md-3.col-sm-6:hover div:first-child{
+	color: white;
+}
+.col-md-3.col-sm-6 p{
+  margin-bottom: 0px;
+}
+.btn img{
+  width: 80px;
+}
+.col-md-3.col-sm-6 div{
+  font-size: 13px !important;
+
+}
+.col-md-3.col-sm-6 hr{
+  margin-top: 0px;
+}
+
+
+/*Redes Sociales*/
+.contenido {
+	top: 25%;
+}
+@media (max-width: 850px) {
+  header{
+        background-size: 95% 100%;   
+  }
+  .carousel-inner {
+      width: 95%;
+    }
+    .carousel-inner .item {
+    height: 130%;
+    }
+    .carousel {
+    height: 60%;
+    }
+    .carousel-caption {
+        bottom: 40%;
+    }
+  .menu > ul > li:hover {
+    background: #003366;
+  }
+  .menu > ul > li> a:hover {
+    color: white;
+  }
+  .menu-dropdown-icon:before{
+    background: #334F70;
+  }
+  .menu > ul > li > ul {
+    background: #40648e; 
+  }
+  .titulos:after{
+    background-image: linear-gradient(45deg, #202851 80%, transparent 70%) !important;
+    }
+    .titulos h3{
+        font-size: 18px;
+        margin-bottom: 0px !important;
+    }
+    .social img {
+        width: 38px  !important;
+    }
+    .social li a{
+      display: table-row-group;
+
+    }
+    .contenido {
+        top: auto;
+        bottom: 0;
+    }
+    
+    /*Slider*/
+    .slider-vista-a{
+        display: none;
+    }
+    .slider-vista-b{
+        display: block;
+    }
+}
+.carousel-caption span{
+    font-size: 25px;
+    position: relative;
+    top: -4px;
+}
+@media (min-width: 850px) {
+    /*Slider*/
+    .slider-vista-a{
+        display: block;
+    }
+    .slider-vista-b{
+        display: none;
+    }
+}
+
+
+/*Creando una galería de imágenes 3Ds*/
+.presentation.container img{
+  transition: 1s ease all;
+  border-radius: 5px ;
+}
+
+.presentation.container:hover a img:first-child{
+  display: inline-block;
+  color: #D06808;
+  animation-duration: 2s;
+  animation-name: slidein;
+  transition: 2s ease
+}
+
+
+@keyframes slidein {
+  0% {
+    transform: rotate(20deg);
+    transform: scale(1, 1);
+  }25%{
+  	transform: rotate(0deg);
+  	transform: scale(1.25, 1.25);
+  }50%{
+  	transform: rotate(-20deg);
+  	transform: scale(1.5, 1.5);
+  }100%{
+	transform: rotate(0deg);
+	transform: scale(1.25, 1.25);
+  }
+}
+
+
+/* SubTitulos  */
+.titulos{
+  background: unset;
+  position: relative;
+  border-bottom: 4px solid #202851;
+}
+.titulos:after{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(45deg, #202851 45%, transparent 20%);
+
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+}
+
+.titulos h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/*-------------Slider------------------*/
+.slider_logos  div:first-child{
+    /*width: 980px !important;
+    height: 120px !important;
+    background: red;*/
+}
+
+#slider1_logos a img{
+  /*border: 2px solid #fcb203;
+  margin-top: 3px;*/
+}
+
+#slider1_logos > div > div> div div {
+
+}
+
+
+/** REDES SOCIALES **/
+.social img{
+  width: 50px;
+  box-shadow: 1px 1px 0px #ffffff;
+}
+.social img:hover{
+  box-shadow: 1px 0px 15px white;
+}
+.social li a{
+  padding: 0;
+  margin-bottom: 8px;
+  transition: .5s ease all;
+}
+.social li a:hover{
+      background-color: transparent;
+}
+
+/*------------Footer----------*/
+footer h4{
+    margin-top: 10px;
+}
+.header-fondo {
+    width: 100%;
+    height: 200px;
+    background: white;
+    height: 100vh;
+}
+/*Eliminar boton de Desconectado*/
+#tawkchat-minified-wrapper{
+    display: none;
+}
